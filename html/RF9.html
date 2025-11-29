@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="es"> <!-- Declaramos que el documento está en español -->
+<head>
+    <meta charset="UTF-8"> <!-- Configura caracteres especiales -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Hace la página responsive -->
+    <title>EcoMarket - Productos Ecológicos</title> <!-- Título de la pestaña -->
+
+    <!-- Enlace al archivo CSS donde están los estilos -->
+    <link rel="stylesheet" href="../css/RF9.css">
+</head>
+
+<body> <!-- Cuerpo del documento -->
+    
+    <!-- Contenedor que simula un navegador -->
+    <div class="marco-navegador">
+
+        <!-- Parte superior del navegador falso -->
+        <div class="cabecera-navegador">
+
+            <!-- Grupo de botones tipo Mac (cerrar, minimizar, maximizar) -->
+            <div class="botones-navegador">
+                <span class="boton"></span> <!-- Botón rojo -->
+                <span class="boton"></span> <!-- Botón amarillo -->
+                <span class="boton"></span> <!-- Botón verde -->
+            </div>
+
+            <!-- Barra de dirección del navegador -->
+            <div class="barra-direccion"></div>
+        </div>
+
+        <!-- Contenedor de la página real -->
+        <div class="contenedor-pagina">
+
+            <!-- Barra superior que contiene el logo y el nav -->
+            <header class="barra-superior">
+                <div class="logo">EcoMarket</div> <!-- Título o logo -->
+                <nav> <!-- Navegación -->
+                    <a href="#" class="enlace-nav">🏠</a> <!-- Enlace de inicio -->
+                </nav>
+            </header>
+
+            <!-- Contenido principal -->
+            <main class="contenido-principal">
+
+                <!-- SECCIÓN: Productos en oferta -->
+                <section class="seccion-productos">
+                    <h2 class="titulo-seccion">🥕 Productos en Oferta</h2>
+
+                    <!-- Grid que contiene las tarjetas -->
+                    <div class="grilla-productos">
+
+                        <!-- Tarjeta de producto -->
+                        <article class="tarjeta-producto">
+
+                            <!-- Contenedor de la imagen -->
+                            <div class="imagen-producto">
+                                <span class="placeholder-imagen">🖼️ Imagen</span> <!-- Imagen de relleno -->
+                            </div>
+
+                            <h3 class="nombre-producto">Jabón Biodegradable</h3>
+
+                            <!-- Etiquetas del producto -->
+                            <div class="etiquetas">
+                                <span class="etiqueta organico">Orgánico</span>
+                                <span class="etiqueta nuevo">Nuevo</span>
+                            </div>
+
+                            <p class="descripcion">Jabón natural con aceite de oliva</p>
+
+                            <!-- Pie de la tarjeta -->
+                            <div class="pie-tarjeta">
+                                <span class="precio">$15.99</span>
+                                <button class="boton-agregar">Agregar</button>
+                            </div>
+                        </article>
+
+                        <!-- Segunda tarjeta -->
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto">
+                                <span class="placeholder-imagen">🖼️ Imagen</span>
+                            </div>
+                            <h3 class="nombre-producto">Shampoo Organico</h3>
+                            <div class="etiquetas">
+                                <span class="etiqueta organico">Orgánico</span>
+                            </div>
+                            <p class="descripcion">Cuidado natural para tu cabello</p>
+                            <div class="pie-tarjeta">
+                                <span class="precio">$24.50</span>
+                                <button class="boton-agregar">Agregar</button>
+                            </div>
+                        </article>
+
+                        <!-- Tercera tarjeta -->
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto">
+                                <span class="placeholder-imagen">🖼️ Imagen</span>
+                            </div>
+                            <h3 class="nombre-producto">Detergente Ecológico</h3>
+                            <div class="etiquetas">
+                                <span class="etiqueta recomendado">Recomendado</span>
+                            </div>
+                            <p class="descripcion">Efectivo y biodegradable</p>
+                            <div class="pie-tarjeta">
+                                <span class="precio">$18.00</span>
+                                <button class="boton-agregar">Agregar</button>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+                <!-- SECCIÓN: Productos nuevos -->
+                <section class="seccion-productos">
+                    <h2 class="titulo-seccion">✨ Productos Nuevos</h2>
+
+                    <!-- Grid más grande para 2 columnas -->
+                    <div class="grilla-productos grilla-2col">
+
+                        <!-- Tarjeta -->
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto">
+                                <span class="placeholder-imagen">🖼️ Imagen</span>
+                            </div>
+                            <h3 class="nombre-producto">Cepillo de Bambú</h3>
+                            <div class="etiquetas">
+                                <span class="etiqueta recomendado">Recomendado</span>
+                            </div>
+                            <p class="descripcion">Cepillo dental ecológico</p>
+                            <div class="pie-tarjeta">
+                                <span class="precio">$8.99</span>
+                                <button class="boton-agregar">Agregar</button>
+                            </div>
+                        </article>
+
+                        <!-- Segunda tarjeta -->
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto">
+                                <span class="placeholder-imagen">🖼️ Imagen</span>
+                            </div>
+                            <h3 class="nombre-producto">Botella Reutilizable</h3>
+                            <div class="etiquetas">
+                                <span class="etiqueta recomendado">Recomendado</span>
+                            </div>
+                            <p class="descripcion">Mantén tus bebidas frescas</p>
+                            <div class="pie-tarjeta">
+                                <span class="precio">$22.00</span>
+                                <button class="boton-agregar">Agregar</button>
+                            </div>
+                        </article>
+                    </div>
+                </section>
+
+                <!-- SECCIÓN: Productos recomendados -->
+                <section class="seccion-productos">
+                    <h2 class="titulo-seccion">💡 Productos Recomendados</h2>
+
+                    <div class="grilla-productos">
+
+                        <!-- Tarjeta 1 -->
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto">
+                                <span class="placeholder-imagen">🖼️ Imagen</span>
+                            </div>
+                            <h3 class="nombre-producto">Velas de Soya</h3>
+                            <div class="etiquetas">
+                                <span class="etiqueta organico">Orgánico</span>
+                                <span class="etiqueta oferta">Oferta</span>
+                            </div>
+                            <p class="descripcion">Aromaterapia y bienestar</p>
+                            <div class="pie-tarjeta">
+                                <span class="precio">$12.50</span>
+                                <button class="boton-agregar">Agregar</button>
+                            </div>
+                        </article>
+
+                        <!-- Tarjeta 2 -->
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto">
+                                <span class="placeholder-imagen">🖼️ Imagen</span>
+                            </div>
+                            <h3 class="nombre-producto">Bolsas Reutilizables</h3>
+                            <div class="etiquetas">
+                                <span class="etiqueta medio-ambiente">Eco-Friendly</span>
+                            </div>
+                            <p class="descripcion">Juego de 5 bolsas de alta calidad</p>
+                            <div class="pie-tarjeta">
+                                <span class="precio">$16.99</span>
+                                <button class="boton-agregar">Agregar</button>
+                            </div>
+                        </article>
+
+                        <!-- Tarjeta 3 -->
+                        <article class="tarjeta-producto">
+                            <div class="imagen-producto">
+                                <span class="placeholder-imagen">🖼️ Imagen</span>
+                            </div>
+                            <h3 class="nombre-producto">Té Orgánico</h3>
+                            <div class="etiquetas">
+                                <span class="etiqueta organico">Orgánico</span>
+                                <span class="etiqueta oferta">Oferta</span>
+                            </div>
+                            <p class="descripcion">Té Certificado 100% natural</p>
+                            <div class="pie-tarjeta">
+                                <span class="precio">$14.00</span>
+                                <button class="boton-agregar">Agregar</button>
+                            </div>
+                        </article>
+
+                    </div>
+                </section>
+
+            </main>
+        </div>
+    </div>
+</body>
+</html>

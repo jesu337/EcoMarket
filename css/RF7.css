@@ -1,0 +1,168 @@
+/* ================================
+   CONFIGURACIÓN GLOBAL DE LA PÁGINA
+   ================================ */
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif; /* Fuente del texto */
+  background: #f9fafb; /* Color de fondo general */
+}
+
+/* Contenedor general que cubre toda la pantalla */
+.pagina {
+  min-height: 100vh;
+}
+
+/* ===================================
+   BARRA SUPERIOR QUE SIMULA UN NAVEGADOR
+   =================================== */
+
+.barra-navegador {
+  background: #e5e7eb; /* Gris claro */
+  padding: 12px 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  border-bottom: 1px solid #d1d5db; /* Línea gris inferior */
+}
+
+/* Grupo donde van los 3 puntos tipo navegador */
+.grupo-puntos {
+  display: flex;
+  gap: 8px;
+}
+
+/* Estilo general para cada punto */
+.punto {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+/* Colores para cada punto */
+.rojo { background: #f87171; }
+.amarillo { background: #fbbf24; }
+.verde { background: #34d399; }
+
+/* Simulación de una barra de dirección del navegador */
+.barra-busqueda-falsa {
+  flex: 1;
+  margin: 0 16px;
+  background: white;
+  border-radius: 6px;
+  padding: 6px 16px;
+  border: 1px solid #d1d5db;
+  color: #9ca3af;
+  height: 18px;
+}
+
+/* ==============================
+   BARRA SUPERIOR DEL SITIO REAL
+   ============================== */
+
+.barra-superior {
+  background: white;
+  border-bottom: 1px solid #e5e7eb; /* línea de separación */
+  padding: 16px 32px;
+  display: flex;
+  justify-content: space-between; /* logo a la izquierda - home a la derecha */
+  align-items: center;
+}
+
+/* Texto del logo principal */
+.logo {
+  color: #059669; /* Verde */
+  font-size: 20px;
+  font-weight: 600;
+}
+
+/* Texto del botón Home */
+.icono-casa {
+
+  font-size: 14px;
+}
+
+/* ======================
+   CONTENIDO PRINCIPAL
+   ====================== */
+
+.contenido-principal {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 64px 16px;
+}
+
+/* Icono de la planta */
+.icono-planta {
+  font-size: 48px;
+  margin-bottom: 24px;
+}
+
+/* Título principal */
+.titulo {
+  font-size: 32px;
+  font-weight: 600;
+  color: #374151; /* Gris oscuro */
+  margin-bottom: 48px;
+}
+
+/* =========================
+   FORMULARIO DE INICIO
+   ========================= */
+
+.contenedor-formulario {
+  width: 100%;
+  max-width: 400px; /* Para centrarlo y limitar tamaño */
+}
+
+/* Cada grupo de label + input */
+.campo {
+  margin-bottom: 24px;
+}
+
+/* Texto de etiqueta */
+.campo label {
+  display: block;
+  color: #374151;
+  font-weight: 500;
+  margin-bottom: 8px;
+}
+
+/* Caja de texto */
+.campo input {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 14px;
+  outline: none;
+}
+
+/* Efecto cuando el input recibe foco (clic) */
+.campo input:focus {
+  border-color: transparent;
+  box-shadow: 0 0 0 2px #10b981; /* Borde verde de enfoque */
+}
+
+/* ======================
+   BOTÓN PRINCIPAL
+   ====================== */
+
+.boton-iniciar {
+  width: 100%;
+  background: #059669; /* Verde */
+  color: white;
+  padding: 12px;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  transition: 0.2s; /* Animación suave */
+}
+
+/* Hover: cuando pasas el mouse */
+.boton-iniciar:hover {
+  background: #047857; /* Verde más oscuro */
+}

@@ -1,0 +1,257 @@
+/* Reinicio de estilos básicos para evitar inconsistencias entre navegadores */
+* {
+    margin: 0; /* Quita márgenes */
+    padding: 0; /* Quita relleno */
+    box-sizing: border-box; /* Controla cómo se calcula el tamaño de los elementos */
+}
+
+/* Estilos generales del cuerpo */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif; /* Tipografía general */
+    background-color: #f5f5f5; /* Fondo gris claro */
+    display: flex; /* Centra el contenido usando flexbox */
+    justify-content: center; /* Centrado horizontal */
+    align-items: center; /* Centrado vertical */
+    min-height: 100vh; /* Al menos la altura completa de la pantalla */
+}
+
+/* -------- MARCO DEL NAVEGADOR (estético) -------- */
+.marco-navegador {
+    width: 100%; /* Ocupa todo el ancho disponible */
+    background: #fff; /* Fondo blanco */
+    box-shadow: 0 10px 40px rgba(0, 0, 0, 0.15); /* Sombra alrededor */
+    overflow: hidden; /* Evita que algo sobresalga */
+}
+
+/* Parte superior que simula la barra del navegador */
+.cabecera-navegador {
+    background: #e8e8e8; /* Color gris suave */
+    padding: 12px 15px; /* Espaciado interno */
+    border-bottom: 1px solid #d0d0d0; /* Línea inferior */
+}
+
+/* Contenedor de los tres botones tipo Mac */
+.botones-navegador {
+    display: flex; /* Los coloca en fila */
+    gap: 8px; /* Separación entre botones */
+    margin-bottom: 10px;
+}
+
+/* Estilo base para cada botón */
+.boton {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%; /* Círculo */
+    background: #ccc; /* Color por defecto */
+}
+
+/* Colores específicos de los botones del navegador */
+.boton:nth-child(1) { background: #ff5f56; } /* Cerrar */
+.boton:nth-child(2) { background: #ffbd2e; } /* Minimizar */
+.boton:nth-child(3) { background: #27c93f; } /* Maximizar */
+
+/* Barra de dirección del navegador */
+.barra-direccion {
+    background: #fff;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    height: 28px; /* Simula el recuadro de URL */
+}
+
+/* -------- CONTENEDOR PRINCIPAL -------- */
+.contenedor-pagina {
+    background: #fafafa; /* Fondo gris casi blanco */
+    min-height: 600px; /* Alto mínimo */
+}
+
+/* Barra superior del sitio (logo + navegación) */
+.barra-superior {
+    background: #fff;
+    padding: 20px 40px; /* Espaciado interno */
+    display: flex; /* Elementos en fila */
+    justify-content: space-between; /* Logo a la izquierda, nav a la derecha */
+    align-items: center;
+    border-bottom: 1px solid #e5e5e5; /* Línea inferior */
+}
+
+/* Estilo del logo */
+.logo {
+    color: #52b788; /* Verde */
+    font-size: 24px;
+    font-weight: 700;
+}
+
+/* Estilo de los enlaces del menú */
+.enlace-nav {
+    color: #666; /* Gris oscuro */
+    text-decoration: none; /* Quita el subrayado */
+    font-size: 20px;
+    transition: transform 0.3s; /* Animación suave para el hover */
+    display: inline-block;
+}
+
+/* Efecto al pasar el cursor */
+.enlace-nav:hover {
+    transform: scale(1.1); /* Se agranda ligeramente */
+}
+
+/* -------- CONTENIDO PRINCIPAL -------- */
+.contenido-principal {
+    padding: 40px; /* Espaciado interno */
+    max-width: 1200px; /* Ancho máximo del contenido */
+    margin: 0 auto; /* Centrado horizontal */
+}
+
+.seccion-productos {
+    margin-bottom: 50px; /* Separación entre secciones */
+}
+
+/* Títulos de cada sección */
+.titulo-seccion {
+    color: #ff8c42; /* Color naranja */
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 25px; /* Separación con los productos */
+}
+
+/* -------- GRILLA DE PRODUCTOS -------- */
+.grilla-productos {
+    display: grid; /* Sistema de cuadrícula */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Columnas adaptables */
+    gap: 25px; /* Espacio entre tarjetas */
+}
+
+/* Grilla especial de 2 columnas más grandes */
+.grilla-2col {
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+/* -------- TARJETAS DE PRODUCTO -------- */
+.tarjeta-producto {
+    background: #fff;
+    border-radius: 8px; /* Bordes redondeados */
+    padding: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08); /* Sombra ligera */
+    transition: all 0.3s; /* Animación al pasar el cursor */
+}
+
+/* Efecto hover para elevar la tarjeta */
+.tarjeta-producto:hover {
+    transform: translateY(-4px); /* Se levanta un poco */
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.12); /* Aumenta la sombra */
+}
+
+/* Contenedor de la imagen */
+.imagen-producto {
+    background: #e8f5e9; /* Verde claro */
+    border-radius: 6px;
+    height: 180px; /* Altura fija */
+    display: flex; /* Centrar el placeholder */
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 15px;
+}
+
+/* Texto dentro del placeholder */
+.placeholder-imagen {
+    color: #52b788;
+    font-size: 14px;
+}
+
+/* Nombre del producto */
+.nombre-producto {
+    color: #333;
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+/* -------- ETIQUETAS -------- */
+.etiquetas {
+    display: flex;
+    gap: 8px; /* Separación entre etiquetas */
+    margin-bottom: 10px;
+    flex-wrap: wrap; /* Si no caben, saltan a la siguiente línea */
+}
+
+/* Estilo base de todas las etiquetas */
+.etiqueta {
+    padding: 4px 12px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #fff; /* Texto blanco */
+}
+
+/* Colores según tipo de etiqueta */
+.etiqueta.organico { background: #52b788; } /* Verde */
+.etiqueta.nuevo { background: #ff8c42; } /* Naranja */
+.etiqueta.recomendado { background: #52b788; }
+.etiqueta.oferta { background: #ff8c42; }
+.etiqueta.medio-ambiente { background: #4cc9f0; } /* Azul */
+
+/* Texto descriptivo de cada producto */
+.descripcion {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 15px;
+    line-height: 1.4; /* Buena lectura */
+}
+
+/* -------- PIE DE CADA TARJETA -------- */
+.pie-tarjeta {
+    display: flex; /* Alinea precio + botón */
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* Precio del producto */
+.precio {
+    color: #333;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Botón de "Agregar" */
+.boton-agregar {
+    background: #52b788; /* Verde */
+    color: white;
+    border: none; /* Sin borde */
+    padding: 10px 20px;
+    border-radius: 6px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer; /* Mano al pasar encima */
+    transition: all 0.3s; /* Animación */
+}
+
+/* Hover del botón */
+.boton-agregar:hover {
+    background: #40916c; /* Verde más oscuro */
+    transform: translateY(-1px); /* Se eleva levemente */
+    box-shadow: 0 4px 12px rgba(82, 183, 136, 0.3); /* Sombra */
+}
+
+/* Efecto al hacer clic */
+.boton-agregar:active {
+    transform: translateY(0);
+}
+
+/* -------- RESPONSIVE -------- */
+@media (max-width: 768px) {
+    .contenido-principal {
+        padding: 20px; /* Reduce espacio en pantallas pequeñas */
+    }
+    
+    .grilla-productos {
+        grid-template-columns: 1fr; /* 1 columna */
+    }
+    
+    .grilla-2col {
+        grid-template-columns: 1fr; /* 1 columna también */
+    }
+    
+    .barra-superior {
+        padding: 15px 20px; /* Reduce espacio del header */
+    }
+}
